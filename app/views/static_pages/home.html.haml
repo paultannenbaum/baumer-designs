@@ -1,0 +1,20 @@
+= content_for :header do
+  :css
+    body { background: #2E2633; }
+.container-fluid
+  .content
+    #baumer
+      .large BaumerDesigns
+      .normal Thanks for finding me on the interwebz.
+      .normal
+        My name is Paul Tannenbaum. I am a web developer and designer located in San Francisco. You can find me on
+        = succeed "," do
+          %a.teal{:href => "http://twitter.com/PaulTannenbaum", :target => "_blank"} Twitter
+        = succeed "," do
+          %a.cherry{:href => "http://www.linkedin.com/pub/paul-tannenbaum/4/6b2/924", :target => "_blank"} LinkedIn
+        \&
+        = succeed "." do
+          %a.salmon{:href => "http://about.me/paultannenbaum", :target => "_blank"} About.Me
+      .normal I am currently taking on contract work at the moment.
+      .small
+        %a.sky_blue{:href => "mailto:paul@baumerdesigns.com"} Contact Me Via Email

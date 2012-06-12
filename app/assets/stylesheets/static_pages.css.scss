@@ -1,0 +1,51 @@
+// Home Page
+#baumer {
+  padding: 3%;
+  font-weight: bold;
+  .large {
+    font-size: 500%; 
+    line-height: 100%;  
+    letter-spacing: -3px;  
+    color: #99173C;
+    margin: .2em 0 .6em 0;
+  }
+  .normal {  
+    margin: 0 0 1em 0; 
+    line-height: 110%;
+    color: #DCE9BE; 
+    font-size: 250%;
+    letter-spacing: -2px; 
+  }
+  .small {
+    margin: 0 0 1em 0;  
+    line-height: 110%;
+    color: #fff;  
+    font-size: 200%;  
+    letter-spacing: -1px; 
+  }
+  .teal {
+    color: #4ECDC4;
+    &:visited {
+      color: #4ECDC4; } 
+  }
+  .yellow {
+    color: #C7F464;
+    &:visited {
+      color: #C7F464; } 
+  }
+  .salmon {
+    color: #FF6B6B;
+    &:visited {
+      color: #FF6B6B; } 
+  }
+  .cherry {
+    color: #C44D58;
+    &:visited {
+      color: #C44D58; } 
+  }
+  .sky_blue {
+    color: #69D2E7;
+    &:visited {
+      color: #69D2E7; } 
+  }
+}
