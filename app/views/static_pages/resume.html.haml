@@ -4,113 +4,39 @@
       .page-header
         %h1 Paul Tannenbaum
         %h2
-          %small Cell: (415) 994-5965 | Email: paultannenbaum@gmail.com
+          %small 
+            Cell: 
+            %a{:href => "tel:+1-415-994-5965"} (415) 994-5965
+            | Email: 
+            %a{:href => "mailto:paultannenbaum@gmail.com", :target => "_blank"} paultannenbaum@gmail.com
     
-    %section.vcard
+    %section.spiel
       .page-header
         %h3 I am a web developer and designer located in San Francisco. The majority of my work history has been in front-end development, though I do have experience contributing to projects in Rails development and user interface design. I have a strong attention to detail, can wear many different hats in a product lifecycle, and work very well in agile teams.
         %br
         %h3 I am interested in many different aspects of application development and am willing to explore different opportunities in this field. Most importantly, I want to work on projects that I find exciting and have great teams behind them. 
     
     %br
-    %br
     
     %section.skills
-      %h1 Skills
-      %h2 Development skills
-      %ul
-        %li Strong front-end development skill set. Solid understanding and experience working with HTML5 and CSS3, a strong grasp of javascript, and experience working on rails and mobile applications.
-        %li Extremely strong understanding of css including cross browser issues, object oriented css, css3 animations and techniques, and implementing third party toolkits such as compass and twitter's bootstrap.
-        %li I understand javascript beyond knowing how to just use jQuery (though I use the library and love it). I understand popular design patterns such as the module and facade patterns, and have implemented them in projects. I have some experience working with Backbone.js and testing code with Jasmine. And I'm all about coffee script!
-        %li Intermediate experience with Ruby on Rails, including work within a large code base, test driven development using Rspec and Cabybara (and Selenium for integration tests), and deploying to remote environments via Heroku.
-        %li Mobile web based application experience. I have used both jQuery Mobile and Sencha Touch for frameworks on previous projects.
-        %li Version control with Git (github and Bitbucket).
-        %li Plenty of experience working with content managements systems including Wordpress, Locomotive, Harmony, and Expression Engine.
-        %li It may be a dying technology, but I do also have flash/actionscript skills
+      .page-header
+        = render :partial => 'resume-skills'
         
-        / %li Fluency in developing optimized/cross-platform front-end code in CSS & HTML.
-        / %li Strong javascript skills with jQuery, familiarity with other popular libraries and also competent in vanilla javascript.
-        / %li
-        /   Experience working with
-        /   = succeed "." do
-        /     %a{:href => "http://rubyonrails.org/", :target => "_blank"} Ruby on Rails
-        /   I love MVC frameworks and am a big fan of
-        /   %a{:href => "http://haml-lang.com/", :target => "_blank"} Haml
-        /   and
-        /   = succeed "." do
-        /     %a{:href => "http://sass-lang.com/", :target => "_blank"} Sass
-        %li
-          Version controling experience working with
-          = succeed "." do
-            %a{:href => "http://github.com/", :target => "_blank"} Github
-        / %li
-        /   Solid experience building content management systems, especially working with
-        /   %a{:href => "http://wordpress.org/", :target => "_blank"} Wordpress
-        /   and
-        /   = succeed "." do
-        /     %a{:href => "http://expressionengine.com/", :target => "_blank"} Expression Engine
-        / %li
-        /   Experience working with
-        /   %a{:href => "http://www.adobe.com/products/flash/", :target => "_blank"} Flash
-        /   and
-        /   = succeed "." do
-        /     %a{:href => "http://en.wikipedia.org/wiki/ActionScript", :target => "_blank"} Actionscript 3
-        / %li Strong understanding of usability, information architecture, and design principles.
-      %h2 Other relevant skills
-      %ul
-        %li Ability to self-start and self-manage projects, as well as to work within teams
-        %li Knowledge of print production and the ability to translate graphic layouts into print ready files
-        %li Strong photography skills, both technically and conceptually. Yeah, I know everyone thinks they are a photographer, but I actually worked as a photographers assistant for two years and was able to gain some proffesional experience.
+    %br
     
+    %section.work
+      .page-header
+        = render :partial => 'resume-work'
     
+    %br
     
     %section.education
       .page-header
-        %h1 Education
-        %h2
-          %small B.A. Environmental Studies, University of California, Santa Barbara 2004 
-
+        = render :partial => 'resume-education'
     
-    %section.work
-      %h1 Work History
+    %br
     
-      %h2 Halogen
-      %h3 Front End Developer - San Francisco, CA - March 2010 - Present
-      %p
-        %a{:href => "http://www.halogennetwork.com/", :target => "_blank"} Halogen
-        is a advertising agency and network that works mainly with "affluent" brands. All agency development is done in house. All applications are put into rails projects, version controlled, code reviewed and refactored. I have been given a wide array of work, from creating embeddable rich media ad units, to creating custom content management systems, to wireframming and design work. Each project has had its unique challenges, and coding for such high traffic sites has forced me to create lean code that plays nice with all browsers (including IE6). It has also been really interesting learning and developing for the world of online advertising, where every user engagement is tracked and analytical information is priority number one. I am very happy to be working with them.
-    
-      %h2 Oniracom
-      %h3 Front End Developer - Santa Barbara, CA - 2009-2010
-      %p
-        Worked several long term contract jobs with music industry specialist
-        = succeed "." do
-          %a{:href => "http://www.oniracom.com/"} Oniracom
-        Oniracom uses
-        %a{:href => "http://basecamphq.com/"} Basecamp
-        to collaborate and
-        %a{:href => "http://expressionengine.com/"} Expression Engine
-        to power dynamic driven content on their websites. I did both front and back end development, as well as design work for them. Websites include: A social networking site for
-        = succeed ";" do
-          %a{:href => "http://www.wailers.com/"} The Wailers
-        micro-tour sites for John Legend and The Counting Crows, and full websites for
-        = succeed "," do
-          %a{:href => "http://www.neilhalstead.com/"} Neil Halstead
-        = succeed "," do
-          %a{:href => "http://www.zeeavi.com/"} Zee Avi
-        \&
-        = succeed "." do
-          %a{:href => "http://www.scenicburrows.com/"} Scenic Burrows
-        
-      %h2 IGOT
-      %h3 Development Consultant - San Francisco, CA - 2009
-      %p
-        %a{:href => "http://globalorthopaedics.org/"} The Institute for Global Orthopaedics & Traumatology
-        is a UC San Francisco affiliated non-profit that came to me dissatisfied with the status of their website: information was hard to find, load times were slow, the content management system was useless, and the website was not cross browser compatible. Working with their administrators, I did a complete overhaul of the information architecture and built a website with simple content management capabilities that was so well received that the
-        %a{:href => "http://orthosurg.ucsf.edu/patient-care/mission-bay.html"} entire department
-        is using it as development model as they are currently updating their platform.
-  
-    %section
+    %section.misc
       %h1 Hobbies
       %p Finding my way into bowls! Mostly in the water on a surfboard, but sometimes I'll grab a different tool and attempt finding them in the snow or on the streets of SF. I also really like a good live show and late night Mexican food.
     
