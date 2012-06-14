@@ -1,0 +1,11 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "Paul Tannenbaum", :name => "author"}/
+      %title= content_for?(:title) ? yield(:title) : "Baumer Designs"
+      %link{:href => "http://baumerdesigns.com/favicon.ico", :rel => "icon", :type => "image/gif"}/
+      = yield(:header)
+  %body
+    = yield
+  = yield(:js_footer)     

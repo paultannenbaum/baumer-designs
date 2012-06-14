@@ -1,10 +1,11 @@
 class StaticPagesController < ApplicationController
-  layout "nude"
   
   def home
+    render :layout => "minimal"
   end
 
   def resume
+    render :layout => "minimal_bootstrap"
   end
 
 end
