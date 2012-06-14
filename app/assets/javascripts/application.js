@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
+
+
+//  Load each individual module vs the whole shebang via: 
+//  https://github.com/seyhunak/twitter-bootstrap-rails/blob/master/vendor/assets/javascripts/twitter/bootstrap.js
