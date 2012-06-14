@@ -1,4 +1,7 @@
-#resume.container
+= content_for :header do 
+  :css
+    html { overflow-y: scroll; }
+#resume.container    
   .content
     %section.vcard
       .page-header
@@ -6,47 +9,41 @@
         %h2
           %small 
             Cell: 
-            %a{:href => "tel:+1-415-994-5965"} (415) 994-5965
+            %a{href: "tel:+1-415-994-5965"} (415) 994-5965
             | Email: 
-            %a{:href => "mailto:paultannenbaum@gmail.com", :target => "_blank"} paultannenbaum@gmail.com
-    
+            %a{href: "mailto:paultannenbaum@gmail.com", target: "_blank"} paultannenbaum@gmail.com
+
     %section.spiel
-      .page-header
-        %h3 I am a web developer and designer located in San Francisco. The majority of my work history has been in front-end development, though I do have experience contributing to projects in Rails development and user interface design. I have a strong attention to detail, can wear many different hats in a product lifecycle, and work very well in agile teams.
-        %br
-        %h3 I am interested in many different aspects of application development and am willing to explore different opportunities in this field. Most importantly, I want to work on projects that I find exciting and have great teams behind them. 
-    
-    %br
-    
-    %section.skills
-      .page-header
-        = render :partial => 'resume-skills'
-        
-    %br
-    
-    %section.work
-      .page-header
-        = render :partial => 'resume-work'
-    
-    %br
-    
-    %section.education
-      .page-header
-        = render :partial => 'resume-education'
-    
-    %br
-    
-    %section.misc
-      %h2 Hobbies
-      
+      %h3 I am a web developer and designer located in San Francisco. The majority of my work history has been in front-end development, though I do have experience contributing to projects in Rails development and user interface design. I have a strong attention to detail, can wear many different hats in a product lifecycle, and work very well in agile teams.
       %br
-      
-      %p Finding my way into bowls! Mostly in the water on a surfboard, but sometimes I'll grab a different tool and attempt finding them in the snow or on the streets of SF. I also really like a good live show and late night Mexican food.
+      %h3 I am interested in many different aspects of application development and am willing to explore different opportunities in this field. Most importantly, I want to work on projects that I find exciting and have great teams behind them. 
+
     
-      %br 
-      
-      %h2 References
-      
-      %br
-      
-      %p Available Upon Request
+    %section.information
+      %ul#Nav-Tab.nav.nav-tabs
+        %li.active
+          %a{href: "#abilities", data: {toggle: "tab"}} Abilities
+        %li 
+          %a{href: "#work", data: {toggle: "tab"}} Work History
+        %li      
+          %a{href: "#education", data: {toggle: "tab"}} Education
+        %li.hide_for_phone
+          %a{href: "#hobbies", data: {toggle: "tab"}} Hobbies
+        %li.hide_for_phone
+          %a{href: "#references", data: {toggle: "tab"}} References
+      .tab-content
+        #abilities.tab-pane.fade.active.in
+          .page-header
+            = render partial: 'resume-skills'
+        #work.tab-pane.fade
+          .page-header
+            = render partial: 'resume-work'
+        #education.tab-pane.fade
+          .page-header
+            = render partial: 'resume-education'
+        #hobbies.tab-pane.fade.hide_for_phone
+          .page-header
+            %h3 Finding my way into bowls! Mostly in the water on a surfboard, but sometimes I'll grab a different tool and attempt finding them in the snow or on the streets of SF. I also really like a good live show and late night Mexican food.
+        #references.tab-pane.fade.hide_for_phone
+          .page-header
+            %h3 Available upon request

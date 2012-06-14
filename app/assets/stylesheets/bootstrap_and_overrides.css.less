@@ -1,7 +1,4 @@
 @import "twitter/bootstrap/bootstrap";  
-
-body { padding-top: 60px; }
-
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
@@ -28,3 +25,17 @@ body { padding-top: 60px; }
 //
 // Example:
 // @linkColor: #ff0000;
+
+@media (min-width: 768px) {
+  #resume {
+    width: 750px;
+  }
+}
+
+@media (max-width: 480px) {
+  #resume {
+    .hide_for_phone {
+      display: none;
+    }
+  }
+}

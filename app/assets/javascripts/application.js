@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap/bootstrap-transition
+//= require twitter/bootstrap/bootstrap-tab
+
 
 
 //  Load each individual module vs the whole shebang via: 
