@@ -38,13 +38,12 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   #resume {
+    background-color: yellow;
     .contact_phone, .contact_email {
       display: block;
     }
-    .contact_email {
-      &:before {
-        content: none;
-      }
+    .divider {
+      display: none;
     }
   }
 }
@@ -52,7 +51,7 @@
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   #resume {
-    width: 750px;
+    width: 680px;
   }
 }
 
