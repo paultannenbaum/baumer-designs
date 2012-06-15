@@ -8,10 +8,12 @@
         %h1 Paul Tannenbaum
         %h2
           %small 
-            Cell: 
-            %a{href: "tel:+1-415-994-5965"} (415) 994-5965
-            | Email: 
-            %a{href: "mailto:paultannenbaum@gmail.com", target: "_blank"} paultannenbaum@gmail.com
+            %span.contact_phone
+              Cell:
+              %a{href: "tel:+1-415-994-5965"} (415) 994-5965
+            %span.contact_email
+              Email: 
+              %a{href: "mailto:paultannenbaum@gmail.com", target: "_blank"} paultannenbaum@gmail.com
 
     %section.spiel
       %h3 I am a web developer and designer located in San Francisco. I have worked primarily in front-end development, but also have experience contributing to projects in Rails development and user interface design. I have a strong attention to detail, am able to wear multiple hats throughout the lifecycle of a product, and work well in agile teams.
@@ -32,18 +34,18 @@
         %li.hide_for_phone
           %a{href: "#references", data: {toggle: "tab"}} References
       .tab-content
-        #skills.tab-pane.fade.active.in
+        #skills.tab-pane.active.in
           .page-header
             = render partial: 'resume-skills'
-        #work.tab-pane.fade
+        #work.tab-pane
           .page-header
             = render partial: 'resume-work'
-        #education.tab-pane.fade
+        #education.tab-pane
           .page-header
             = render partial: 'resume-education'
-        #hobbies.tab-pane.fade.hide_for_phone
+        #hobbies.tab-pane.hide_for_phone
           .page-header
             %h3 Finding my way into bowls! Mostly in the water on a surfboard, but sometimes I'll grab a different tool and attempt finding them in the snow or on the streets of SF. I also really like a good live show and late night Mexican food.
-        #references.tab-pane.fade.hide_for_phone
+        #references.tab-pane.hide_for_phone
           .page-header
             %h3 Available upon request
