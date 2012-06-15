@@ -1,9 +1,14 @@
 %h3
-  %a{:href => "http://baumerdesigns.com/", :target => "_blank"} Baumer Designs
+  = link_to 'Baumer Designs', root_path
 %h3
   %small Freelance/Contract Developer - San Francisco, CA - February 2012 - Present
 %p
-  In the last few months I have been taking on contract work. I built a mobile web app for a conference UCSF hosted and have been maintaining and improving the rails back-end of popular surf website Korduroy.tv. I also did some traveling and just recently returned back to the states.
+  In the last few months I have been taking on contract work. I built a 
+  = link_to 'mobile web app', 'http://oticonf.globalorthopaedics.org/', target: '_blank'
+  for a conference UCSF hosted and have been maintaining and improving the rails back-end of popular surf website
+  = succeed '.' do
+    = link_to 'Korduroy.tv', 'http://korduroy.tv/', target: '_blank'
+  I also did some traveling and just recently returned back to the states.
 
 %br
 
@@ -14,50 +19,53 @@
     %b Halogen
     are basically the same company. After a pivot in business focus, Halogen decided to rebrand itself as Social Chorus. I have them listed as two separate jobs because my role as a developer changed drastically after the transition, but career wise I was with the same company for the two year duration.
 %h3
-  %a{:href => "http://socialchorus.com/", :target => "_blank"} Social Chorus
+  = link_to 'Social Chorus', 'http://socialchorus.com/', target: "_blank"
 %h3
   %small Full Stack Developer - San Francisco, CA - August 2011 - February 2012
 %p
-  %a{:href => "http://socialchorus.com/", :target => "_blank"} Social Chorus 
-  offers digital marketing strategy and software to several fortune 500 brands. As a developer, I was in charge of building out their influencer relationship management platform. Thanks to some help from the great folks at Pivotal Labs, our team instilled strict agile practices including daily stand-ups, paired programming, and test driven development for every piece of functionality. The technology stack was Rails 3.2 with deployment on Heroku, unit tested with Rspec, Jasmine, and Selenium. The application ran continuous integration tests with Jenkins on an EC2 instance that fired a new build every time their was a push to our github repo. The app also had an analytics module that used nginx to store large datasets in a sharded mongodb. I was with the product from inception to it's beta release, and being my first real time developing in a large rails app, I learned an incredible amount about the language itself as well as application architecture. In regards to design, I helped shape the user interface by meeting daily with the design team to discuss potential issues and offered alternative solutions.
-  
+  = link_to 'Social Chorus', 'http://socialchorus.com/', target: "_blank"
+  offers digital marketing strategy and software to several fortune 500 brands. As a developer, I was in charge of building out their influencer relationship management platform. Thanks to some help from the great folks at 
+  = succeed ',' do
+    = link_to 'Pivotal Labs', 'http://pivotallabs.com/', target: '_blank'
+  our team instilled strict agile practices including daily stand-ups, paired programming, and test driven development for every piece of functionality. The technology stack was Rails 3.2 with deployment on Heroku, unit tested with Rspec, Jasmine, and Selenium. The application ran continuous integration tests with Jenkins on an EC2 instance that fired a new build every time their was a push to our github repo. The app also had an analytics module that used nginx to store large datasets in a sharded mongodb. I was with the product from inception to it's beta release, and being my first real time developing in a large rails app, I learned an incredible amount about the language itself as well as application architecture. In regards to design, I helped shape the user interface by meeting daily with the design team to discuss potential issues and offered alternative solutions.
+    
 %br
   
 %h3
-  %a{:href => "http://www.halogennetwork.com/", :target => "_blank"} Halogen
+  = link_to 'Halogen', 'http://www.halogennetwork.com/', target: "_blank"
 %h3
   %small Lead Front End Developer - San Francisco, CA - March 2010 - August 2011
 %p
-  Before Social Chorus' pivot, the company was known as 
-  %a{:href => "http://www.halogennetwork.com/", :target => "_blank"} Halogen
+  Before Social Chorus' pivot, the company was known as
+  = link_to 'Halogen', 'http://www.halogennetwork.com/', target: "_blank"
   and  was an advertising agency and network that worked mainly with "affluent" brands. All agency development was done in house. All applications were put into rails projects, version controlled, code reviewed and refactored. I was given a wide array of work, from creating Facebook applications, custom content management systems, wire-framing and design work, embeddable rich media ad units, and high traffic websites. As the "front-end guy", I faced many unique challenges, including dabbling with html5 technologies and wrangling legacy browsers (including IE6) into becoming pixel perfect. I also trained several employees and advised management on technology direction.
 
 %br
 
-%h3 
-  %a{:href => "http://orthosurg.ucsf.edu/patient-care/mission-bay.html", :target => "_blank"} UCSF
+%h3
+  = link_to 'UCSF', 'http://orthosurg.ucsf.edu/patient-care/mission-bay.html', target: "_blank"
 %h3 
   %small Development Consultant - San Francisco, CA - January 2010 - March 2010
 %p
   Did a wide range of work for the medical university on their website including cleaning up and refactoring legacy code, training employees on how to use the content management system, and helping transition data from their old cms to the newly developed one. I also built a custom cms for one of their departments,
   = succeed "." do
-    %a{:href => "http://globalorthopaedics.org/"} The Institute for Global Orthopaedics & Traumatology
+    = link_to 'The Institute for Global Orthopaedics & Traumatology', 'http://globalorthopaedics.org/', target: "_blank"
   The department was dissatisfied with the status of their website: information was hard to find, load times were slow, the content management system was useless, and the website was not cross browser compatible. Working with their administrators, I did a complete overhaul of the information architecture and built a website with simple content management capabilities that was so well received that the
-  %a{:href => "http://orthosurg.ucsf.edu/patient-care/mission-bay.html"} entire department
+  = link_to 'entire department', 'http://orthosurg.ucsf.edu/patient-care/mission-bay.html', target: "_blank"
   used it as development model during their platform update.
 
 %br
 
 %h3
-  %a{:href => "http://www.oniracom.com/", :target => "_blank"} Oniracom
+  = link_to 'Oniracom', 'http://www.oniracom.com/', target: "_blank"
 %h3 
   %small Front End Developer - Santa Barbara, CA - 2009-2010
 %p
   Worked several long term contract jobs with music industry specialist
   = succeed "." do
-    %a{:href => "http://www.oniracom.com/"} Oniracom
+    = link_to 'Oniracom', 'http://www.oniracom.com/', target: "_blank"
   Oniracom is a marketing agency that deals mostly with musicians and hollywood celebrities. I worked in their online division and primarily worked as a front-end developer, building out many of their websites. The company used 
-  %a{:href => "http://expressionengine.com/"} Expression Engine
+  = link_to 'Expression Engine', 'http://expressionengine.com/', target: "_blank"
   for content management, and I did have to do some PHP work to tie the front-end to the cms. I also did website design work for the agency.
 
 %br
