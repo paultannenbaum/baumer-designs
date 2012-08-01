@@ -15,22 +15,27 @@
     a:visited { text-decoration:none }
     a:hover { text-decoration:underline }
     .teal, 
-    .teal:visited { color:#4ECDC4}
+    .teal:visited { color:#4ECDC4 }
     .yellow, 
-    .yellow:visited { color:#C7F464}
+    .yellow:visited { color:#C7F464 }
     .salmon, 
-    .salmon:visited { color:#FF6B6B}
+    .salmon:visited { color:#FF6B6B }
     .cherry, 
-    .cherry:visited { color:#C44D58} 
+    .cherry:visited { color:#C44D58 } 
     .sky_blue,
     .sky_blue:visited { color:#69D2E7 }
+    .yellow,
+    .yellow:visited { color:#FFF870 }
     
 
 #baumer
   %h1 BaumerDesigns
   %h2 Thanks for finding me on the interwebz.
   %h2
-    My name is Paul Tannenbaum. I am a web developer and designer located in San Francisco. You can find me on
+    My name is Paul Tannenbaum. I am a web developer and designer located in San Francisco. I am currently working as a front-end developer at 
+    = succeed "." do
+      %a.yellow{:href => "http://www.rga.com/", :target => "_blank"} R/GA
+    You can find me on
     = succeed "," do
       %a.teal{:href => "http://twitter.com/PaulTannenbaum", :target => "_blank"} Twitter
     = succeed "," do
@@ -38,6 +43,6 @@
     \&
     = succeed "." do
       %a.salmon{:href => "http://about.me/paultannenbaum", :target => "_blank"} About.Me
-  %h2 I am currently taking on contract work at the moment.
+  %h2 I am not currently available for work.
   %h3
     %a.sky_blue{:href => "mailto:paul@baumerdesigns.com"} Contact Me Via Email
