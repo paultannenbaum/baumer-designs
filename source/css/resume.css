@@ -1,0 +1,23 @@
+@media (max-width:480px) {
+    #resume .hide_for_phone { display: none }
+    #resume .contact_phone,
+    #resume .contact_email { font-size: 14px }
+    #resume .me { margin-bottom: 5px }
+}
+@media (max-width:767px) {
+    #resume .contact_phone,
+    #resume .contact_email { display: block }
+    #resume .divider { display: none }
+}
+@media (min-width:768px) and (max-width:979px) {
+    #resume { width: 680px }
+}
+@media (min-width:1200px) {
+    #resume { width: 750px }
+}
+#resume { padding-top: 20px }
+#resume .alert {
+    margin-top: 10px;
+    color: #404040;
+}
+#resume .spiel { margin-bottom: 30px }
