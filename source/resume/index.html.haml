@@ -1,0 +1,36 @@
+#resume.container
+  .content
+    %section.vcard
+      .page-header
+        %h1.me Paul Tannenbaum
+        %h2
+          %small
+            %span.contact_phone
+              Cell:
+              %a{:href => "tel:+1-415-994-5965"} (415) 994-5965
+            %span.divider |
+            %span.contact_email
+              Email:
+              %a{:href => "mailto:paultannenbaum@gmail.com", :target => "_blank"} paultannenbaum@gmail.com
+    %section.spiel.hide_for_phone
+      %h3 I am a web developer and designer located in San Francisco. I have worked primarily in front-end development, but also have experience contributing to projects in Rails development and user interface design. I am able to wear multiple hats throughout the lifecycle of a product, work well in agile teams, and am very detailed oriented.
+      %br/
+      %h3 I am interested in all aspects of application development, and am willing to explore different opportunities in this field. Most importantly, I want to work on exciting projects with great team members.
+    %section.information
+      %ul#Nav-Tab.nav.nav-tabs
+        %li.active
+          %a{"data-toggle" => "tab", :href => "#skills"} Skills
+        %li
+          %a{"data-toggle" => "tab", :href => "#work"} Work History
+        %li
+          %a{"data-toggle" => "tab", :href => "#education"} Education
+        %li.hide_for_phone
+          %a{"data-toggle" => "tab", :href => "#hobbies"} Hobbies
+        %li.hide_for_phone
+          %a{"data-toggle" => "tab", :href => "#references"} References
+      .tab-content
+        = partial 'skills'
+        = partial 'work'
+        = partial 'education'
+        = partial 'hobbies'
+        = partial 'references'

@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4a28793-bfd7-4d70-ae27-4b7247f3cb67" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/css/resume.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/bootstrap.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/resume/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/layouts/resume.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/resume/_education.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/resume/_hobbies.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/resume/_skills.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/resume/_work.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/layouts/bootstrap.html.erb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/js/bootstrap.js" afterPath="$PROJECT_DIR$/source/js/resume.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/resume/index.html.erb" afterPath="$PROJECT_DIR$/source/resume/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.rb" afterPath="$PROJECT_DIR$/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html.haml" afterPath="$PROJECT_DIR$/source/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/css/resume.css" afterPath="$PROJECT_DIR$/source/css/resume.css" />
     </list>
     <ignored path="Baumer-Designs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,18 +32,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/index.html.haml">
+        <entry file="file://$PROJECT_DIR$/source/resume/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="45" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.92">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/resume/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="6" selection-start="13447" selection-end="13447" vertical-scroll-proportion="-134.4">
+            <state line="4" column="19" selection-start="82" selection-end="86" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
@@ -58,23 +52,32 @@
       <file leaf-file-name="config.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+            <state line="12" column="36" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/layouts/bootstrap.html.erb">
+      <file leaf-file-name="layout.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/layouts/layout.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="636" selection-end="636" vertical-scroll-proportion="0.29587483">
+            <state line="7" column="4" selection-start="300" selection-end="300" vertical-scroll-proportion="-4.48">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/js/bootstrap.js">
+      <file leaf-file-name="resume.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/layouts/resume.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="26" selection-start="643" selection-end="643" vertical-scroll-proportion="0.27311522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/js/resume.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="3472" selection-start="101807" selection-end="101807" vertical-scroll-proportion="0.0">
               <folding>
@@ -98,7 +101,7 @@
       <file leaf-file-name="resume.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/css/resume.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+            <state line="3" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,18 +140,20 @@
       <list>
         <option value="$PROJECT_DIR$/source/stylesheets/all.css" />
         <option value="$PROJECT_DIR$/source/layouts/layout.erb" />
-        <option value="$PROJECT_DIR$/source/layouts/layout.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/source/index.html.haml" />
-        <option value="$PROJECT_DIR$/config.rb" />
         <option value="$PROJECT_DIR$/source/js/bootstrap.css" />
         <option value="$PROJECT_DIR$/source/js/resume.css" />
-        <option value="$PROJECT_DIR$/source/layouts/bootstrap.html.haml" />
         <option value="$PROJECT_DIR$/source/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/source/layouts/bootstrap.html" />
-        <option value="$PROJECT_DIR$/source/resume/index.html.haml" />
         <option value="$PROJECT_DIR$/source/layouts/bootstrap.html.erb" />
+        <option value="$PROJECT_DIR$/source/resume/index.html.haml" />
+        <option value="$PROJECT_DIR$/source/css/resume.css" />
+        <option value="$PROJECT_DIR$/source/layouts/bootstrap.html.haml" />
+        <option value="$PROJECT_DIR$/config.rb" />
+        <option value="$PROJECT_DIR$/source/layouts/layout.html.haml" />
+        <option value="$PROJECT_DIR$/source/layouts/resume.html.haml" />
       </list>
     </option>
   </component>
@@ -213,6 +218,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Baumer-Designs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Baumer-Designs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Baumer-Designs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Baumer-Designs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,13 +342,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22453372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22453372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -375,13 +416,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/layouts/layout.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="11" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
@@ -438,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/layout.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="300" selection-end="329" vertical-scroll-proportion="-4.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5683" column="0" selection-start="196823" selection-end="196823" vertical-scroll-proportion="0.0">
@@ -452,14 +479,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/resume.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/source/js/resume.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="3472" selection-start="101807" selection-end="101807" vertical-scroll-proportion="0.0">
           <folding>
@@ -470,23 +490,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/css/resume.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/resume/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="82" selection-end="86" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+        <state line="12" column="36" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/resume/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/source/layouts/layout.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="6" selection-start="13447" selection-end="13447" vertical-scroll-proportion="-134.4">
+        <state line="7" column="4" selection-start="300" selection-end="300" vertical-scroll-proportion="-4.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/layouts/bootstrap.html.erb">
+    <entry file="file://$PROJECT_DIR$/source/layouts/resume.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="636" selection-end="636" vertical-scroll-proportion="0.29587483">
+        <state line="12" column="26" selection-start="643" selection-end="643" vertical-scroll-proportion="0.27311522">
           <folding />
         </state>
       </provider>

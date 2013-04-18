@@ -1,3 +1,7 @@
+/*
+*= require bootstrap
+*/
+
 @media (max-width:480px) {
     #resume .hide_for_phone { display: none }
     #resume .contact_phone,

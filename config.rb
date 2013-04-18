@@ -10,7 +10,7 @@
 # end
 
 # alternative layouts
-page "/resume/*", :layout => "bootstrap"
+page "/resume/*", :layout => "resume"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
