@@ -1,3 +1,0 @@
-== Personal Website of Front-End Developer Paul Tannenbaum
-
-- This is going to become a place for my portfolio and hopefully some blog posts. 
