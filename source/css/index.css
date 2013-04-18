@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2E2633;
+    font: normal 100% sans-serif;
+    width: auto;
+}
+
+h1 {
+    color: #99173C;
+    font-size: 500%;
+    letter-spacing: -3px;
+    line-height: 100%;
+    margin: .2em 0 .6em 0;
+}
+
+h2,
+h3 {
+    color: #DCE9BE;
+    font-size: 250%;
+    line-height: 110%;
+    letter-spacing: -2px;
+    margin: 0 0 1em 0;
+}
+
+h3 {
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
+a,
+a:visited {
+    text-decoration: none
+}
+a:hover {
+    text-decoration: underline
+}
+
+#wrapper {
+    padding: 3%
+}
+
+#github,
+#github:visited {
+    color: #4ECDC4
+}
+
+#twitter,
+#twitter:visited {
+    color: #C7F464
+}
+
+#linkedin,
+#linkedin:visited {
+    color: #FF6B6B
+}
+
+#aboutme,
+#aboutme:visited {
+    color: #C44D58
+}
+
+#contact,
+#contact:visited {
+    color: #69D2E7
+}
