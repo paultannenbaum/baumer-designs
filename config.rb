@@ -29,3 +29,14 @@ configure :build do
   activate :minify_javascript
   activate :cache_buster
 end
+
+# Add in deploy method
+password = ENV["PASSWORD"]
+
+activate :deploy do |deploy|
+  deploy.method = :ftp
+  deploy.host = "74.220.207.165"
+  deploy.user = "kauaicre"
+  deploy.password = password
+  deploy.path = "/public_html/"
+end
