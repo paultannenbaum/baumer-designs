@@ -13,6 +13,10 @@
     \&
     = succeed "." do
       %a#aboutme{:href => "http://about.me/paultannenbaum", :target => "_blank"} About.Me
-  %h2 I am not taking on any extra work at the moment.
+  %h2
+    I currently work at
+    = succeed "." do
+      %a#apple{:href => "http://www.apple.com/", :target => "_blank"} Apple
+    I am not taking on any extra work at the moment.
   %h3
     %a#contact{:href => "mailto:paultannenbaum@gmail.com"} Contact Me Via Email

@@ -67,6 +67,11 @@ a:hover {
     color: #C44D58
 }
 
+#apple,
+#apple:visited {
+    color: #F3708B
+}
+
 #contact,
 #contact:visited {
     color: #69D2E7
