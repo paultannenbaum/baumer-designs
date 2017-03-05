@@ -3,4 +3,5 @@ deployment.yaml
 /.bundle
 /build
 /.sass-cache
-
+.idea
+/.idea
