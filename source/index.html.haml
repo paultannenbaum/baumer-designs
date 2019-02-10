@@ -18,3 +18,16 @@
       = link_to 'About.Me', 'http://about.me/paultannenbaum', id: 'aboutme'
   %h3
     = link_to 'Contact Me Via Email', 'mailto:paultannenbaum@gmail.com', id: 'contact'
+
+/ Start of HubSpot Embed Code
+%script#hs-script-loader{:async => "", :defer => "defer", :src => "//js.hs-scripts.com/5459597.js", :type => "text/javascript"}
+/ End of HubSpot Embed Code
+
+/ Global site tag (gtag.js) - Google Analytics
+%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-6495998-1"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6495998-1');
