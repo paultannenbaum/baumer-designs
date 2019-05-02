@@ -1,8 +1,5 @@
-Gemfile.lock
-deployment.yaml
-/.bundle
-/build
-/.sass-cache
-.idea
-/.idea
-.idea/
+.bundle
+.cache
+.DS_Store
+.sass-cache
+build/
